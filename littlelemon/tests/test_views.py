@@ -9,6 +9,11 @@ class MenuViewTest(TestCase):
         
     def test_getall(self) -> None:
         items = Menu.objects.all()
-        print(items)
         self.assertEqual(items.count(), 3)
         self.assertIn(self.item_1, items)
+        self.assertEqual(self.item_1.title, "Bolognaise")
+        self.assertIn(self.item_2, items)
+        self.assertEqual(self.item_2.price, 8.50)
+        self.assertIn(self.item_3, items)
+        self.assertEqual(self.item_3.inventory, 5)
+        
