@@ -1,0 +1,8 @@
+Insomnia API URLS to test
+/restaurant/bookings/tables
+/restaurant/menu/
+/restaurant/menu/<pk>
+/restaurant/api-token-auth
+
+Register New User
+/auth/user/
